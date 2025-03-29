@@ -1,0 +1,8 @@
+.bodyText {
+  color: var(--mantine-color-dark-2);
+  margin-left: rem(7px);
+}
+
+.author {
+  color: var(--mantine-color-dark-2);
+}

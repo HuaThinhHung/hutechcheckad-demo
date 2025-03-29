@@ -1,0 +1,64 @@
+custom:
+      options: {
+        compact: true, // Nén code lại để khó đọc hơn
+        controlFlowFlattening: false, // Làm rối luồng điều khiển
+        controlFlowFlatteningThreshold: 1, // Độ phức tạp của control flow (0-1)
+        deadCodeInjection: true, // Chèn mã rác vào để làm tăng độ phức tạp
+        deadCodeInjectionThreshold: 1, // Tỉ lệ mã rác được chèn vào (0-1)
+        stringArray: true, // Biến tất cả chuỗi thành mảng khó đọc
+        stringArrayEncoding: ['base64', 'rc4'], // Mã hóa chuỗi bằng RC4 để khó giải mã hơn
+        stringArrayThreshold: 1, // 📌 100% chuỗi sẽ bị mã hóa
+        stringArrayCallsTransform: true, //
+        stringArrayCallsTransformThreshold: 1, //
+        stringArrayIndexShift: true, // 🔥 Xáo trộn vị trí chuỗi trong mảng
+        stringArrayRotate: true, // 🔥 Xoay vòng mảng chuỗi để gây rối
+        stringArrayShuffle: true, // 🔥 Xáo trộn thứ tự của chuỗi trong mảng
+        disableConsoleOutput: true, // Vô hiệu hóa console.log
+        debugProtection: true, // Ngăn chặn mở DevTools
+        debugProtectionInterval: 1000, // Kiểm tra DevTools mở mỗi 4 giây
+        selfDefending: true, // Tự bảo vệ, tránh bị chỉnh sửa mã
+        transformObjectKeys: true, // Làm rối key của object
+        numbersToExpressions: true, // Biến số thành biểu thức toán học khó hiểu
+        simplify: true, // Tối ưu hóa mã đã bị làm rối
+        splitStrings: true, // Chia nhỏ chuỗi thành nhiều phần để khó đọc hơn
+        splitStringsChunkLength: 3, // 📌 Mỗi phần chỉ dài 3 ký tự
+        rotateStringArray: true // Đảo mảng chuỗi để gây rối
+      }
+
+High obfuscation, low performance:
+      options: {
+        compact: true,
+        controlFlowFlattening: true,
+        controlFlowFlatteningThreshold: 1,
+        deadCodeInjection: true,
+        deadCodeInjectionThreshold: 1,
+        debugProtection: true,
+        debugProtectionInterval: 1000,
+        disableConsoleOutput: true,
+        identifierNamesGenerator: 'hexadecimal',
+        log: false,
+        numbersToExpressions: true,
+        renameGlobals: false,
+        selfDefending: true,
+        simplify: true,
+        splitStrings: true,
+        splitStringsChunkLength: 3,
+        stringArray: true,
+        stringArrayCallsTransform: true,
+        stringArrayCallsTransformThreshold: 1,
+        stringArrayEncoding: ['base64', 'rc4'],
+        stringArrayIndexShift: true,
+        stringArrayRotate: true,
+        stringArrayShuffle: true,
+        stringArrayWrappersCount: 5,
+        stringArrayWrappersChainedCalls: true,
+        stringArrayWrappersParametersMaxCount: 5,
+        stringArrayWrappersType: 'function',
+        stringArrayThreshold: 1,
+        transformObjectKeys: true,
+        unicodeEscapeSequence: false,
+        rotateStringArray: true
+      }
+
+
+
